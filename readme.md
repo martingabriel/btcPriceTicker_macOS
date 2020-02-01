@@ -18,6 +18,6 @@ Conversion currency can be simply modified in `BtcPriceProvider.swift`. Supporte
 
 ```swift
 let requestUrl = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd" // modify this -> vs_currencies=usd
-let usdPrice = json["bitcoin"]["usd"].doubleValue // and this -> ["usd"]
+let price = json["bitcoin"]["usd"].doubleValue // and this -> ["usd"]
 ```
 
