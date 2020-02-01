@@ -3,26 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6BA1601F23DB8088005DD3F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA1601E23DB8088005DD3F0 /* AppDelegate.swift */; };
-		6BA1602123DB8088005DD3F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA1602023DB8088005DD3F0 /* ContentView.swift */; };
 		6BA1602323DB808F005DD3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA1602223DB808F005DD3F0 /* Assets.xcassets */; };
 		6BA1602623DB808F005DD3F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA1602523DB808F005DD3F0 /* Preview Assets.xcassets */; };
 		6BA1602923DB808F005DD3F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA1602723DB808F005DD3F0 /* Main.storyboard */; };
+		6BADD2D423E4EF2B00A7EF80 /* BtcPriceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BADD2D323E4EF2B00A7EF80 /* BtcPriceProvider.swift */; };
+		6BADD2D623E4F17100A7EF80 /* BtcPriceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BADD2D523E4F17100A7EF80 /* BtcPriceInfo.swift */; };
+		FDA2D893508A8E3F2B9E9AAD /* Pods_MacOSbtcTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A14EAA3213C54FC0C5F0A3 /* Pods_MacOSbtcTicker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BA1601B23DB8088005DD3F0 /* MacOSbtcTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOSbtcTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA1601E23DB8088005DD3F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BA1602023DB8088005DD3F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BA1602223DB808F005DD3F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BA1602523DB808F005DD3F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6BA1602823DB808F005DD3F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BA1602A23DB808F005DD3F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA1602B23DB808F005DD3F0 /* MacOSbtcTicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOSbtcTicker.entitlements; sourceTree = "<group>"; };
+		6BADD2D323E4EF2B00A7EF80 /* BtcPriceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcPriceProvider.swift; sourceTree = "<group>"; };
+		6BADD2D523E4F17100A7EF80 /* BtcPriceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcPriceInfo.swift; sourceTree = "<group>"; };
+		82B5E64D1298FD505791FAA1 /* Pods-MacOSbtcTicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacOSbtcTicker.debug.xcconfig"; path = "Target Support Files/Pods-MacOSbtcTicker/Pods-MacOSbtcTicker.debug.xcconfig"; sourceTree = "<group>"; };
+		B1A14EAA3213C54FC0C5F0A3 /* Pods_MacOSbtcTicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacOSbtcTicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DC62F2B7C22FE9878BCFDA /* Pods-MacOSbtcTicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacOSbtcTicker.release.xcconfig"; path = "Target Support Files/Pods-MacOSbtcTicker/Pods-MacOSbtcTicker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +36,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA2D893508A8E3F2B9E9AAD /* Pods_MacOSbtcTicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FEA38798236A21590E3F43A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82B5E64D1298FD505791FAA1 /* Pods-MacOSbtcTicker.debug.xcconfig */,
+				D7DC62F2B7C22FE9878BCFDA /* Pods-MacOSbtcTicker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6BA1601223DB8088005DD3F0 = {
 			isa = PBXGroup;
 			children = (
 				6BA1601D23DB8088005DD3F0 /* MacOSbtcTicker */,
 				6BA1601C23DB8088005DD3F0 /* Products */,
+				5FEA38798236A21590E3F43A /* Pods */,
+				FD7C7C55BE1006CC20A492D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +74,13 @@
 			isa = PBXGroup;
 			children = (
 				6BA1601E23DB8088005DD3F0 /* AppDelegate.swift */,
-				6BA1602023DB8088005DD3F0 /* ContentView.swift */,
 				6BA1602223DB808F005DD3F0 /* Assets.xcassets */,
 				6BA1602723DB808F005DD3F0 /* Main.storyboard */,
 				6BA1602A23DB808F005DD3F0 /* Info.plist */,
 				6BA1602B23DB808F005DD3F0 /* MacOSbtcTicker.entitlements */,
 				6BA1602423DB808F005DD3F0 /* Preview Content */,
+				6BADD2D323E4EF2B00A7EF80 /* BtcPriceProvider.swift */,
+				6BADD2D523E4F17100A7EF80 /* BtcPriceInfo.swift */,
 			);
 			path = MacOSbtcTicker;
 			sourceTree = "<group>";
@@ -74,6 +93,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FD7C7C55BE1006CC20A492D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1A14EAA3213C54FC0C5F0A3 /* Pods_MacOSbtcTicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BA1602E23DB808F005DD3F0 /* Build configuration list for PBXNativeTarget "MacOSbtcTicker" */;
 			buildPhases = (
+				A204E2EFECC3C1BA09CEF74F /* [CP] Check Pods Manifest.lock */,
 				6BA1601723DB8088005DD3F0 /* Sources */,
 				6BA1601823DB8088005DD3F0 /* Frameworks */,
 				6BA1601923DB8088005DD3F0 /* Resources */,
+				E5A13A55978EAE89BA7D5EAA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,13 +169,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A204E2EFECC3C1BA09CEF74F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacOSbtcTicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5A13A55978EAE89BA7D5EAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacOSbtcTicker/Pods-MacOSbtcTicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacOSbtcTicker/Pods-MacOSbtcTicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MacOSbtcTicker/Pods-MacOSbtcTicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6BA1601723DB8088005DD3F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BA1602123DB8088005DD3F0 /* ContentView.swift in Sources */,
+				6BADD2D623E4F17100A7EF80 /* BtcPriceInfo.swift in Sources */,
 				6BA1601F23DB8088005DD3F0 /* AppDelegate.swift in Sources */,
+				6BADD2D423E4EF2B00A7EF80 /* BtcPriceProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +351,7 @@
 		};
 		6BA1602F23DB808F005DD3F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B5E64D1298FD505791FAA1 /* Pods-MacOSbtcTicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MacOSbtcTicker/MacOSbtcTicker.entitlements;
@@ -302,6 +375,7 @@
 		};
 		6BA1603023DB808F005DD3F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7DC62F2B7C22FE9878BCFDA /* Pods-MacOSbtcTicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MacOSbtcTicker/MacOSbtcTicker.entitlements;
