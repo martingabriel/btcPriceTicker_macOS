@@ -18,9 +18,9 @@ class BtcPriceProvider {
         Alamofire.request(requestUrl).responseJSON { response in
             if let data = response.data {
                 let json = JSON(data)
-                let usdPrice = json["bitcoin"]["usd"].doubleValue
+                let price = json["bitcoin"]["usd"].doubleValue
                                 
-                completion(BtcPriceInfo(usd: usdPrice))
+                completion(BtcPriceInfo(price: price))
             } else {
                 completion(nil)
             }

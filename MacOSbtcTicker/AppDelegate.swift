@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         // update UI
                         DispatchQueue.main.async {
                             if let button = self.statusBarItem.button {
-                                button.title = "₿ = \(newBtcPriceInfo.usd)$"
+                                button.title = "₿ = \(newBtcPriceInfo.price)$"
                             }
                         }
                     }
@@ -56,7 +56,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let button = self.statusBarItem.button {
             btcPriceProvider.getCurrentBtcPrice(completion: { newBtcPrice in
                 if let newBtcPriceInfo = newBtcPrice {
-                    button.title = "₿=\(newBtcPriceInfo.usd)$"
+                    button.title = "₿ = \(newBtcPriceInfo.price)$"
                     //print(newBtcPriceInfo.usd)
                 }
             })

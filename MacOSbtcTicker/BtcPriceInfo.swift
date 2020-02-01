@@ -9,5 +9,5 @@
 import Foundation
 
 struct BtcPriceInfo {
-    var usd: Double
+    var price: Double
 }
