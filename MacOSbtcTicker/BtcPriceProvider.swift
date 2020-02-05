@@ -16,14 +16,20 @@ class BtcPriceProvider {
         let requestUrl = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
         
         Alamofire.request(requestUrl).responseJSON { response in
-            if let data = response.data {
-                let json = JSON(data)
-                let price = json["bitcoin"]["usd"].doubleValue
-                                
-                completion(BtcPriceInfo(price: price))
-            } else {
-                completion(nil)
+            switch (response.result) {
+                case .success:
+                    if let data = response.data {
+                        let json = JSON(data)
+                        let price = json["bitcoin"]["usd"].doubleValue
+                                        
+                        completion(BtcPriceInfo(price: price))
+                    } else {
+                        completion(nil)
+                    }
+                case .failure:
+                    completion(nil)
             }
+            
         }
     }
 }
